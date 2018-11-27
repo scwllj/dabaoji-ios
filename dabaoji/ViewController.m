@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "DeviceInfo.h"
+#import "MainViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *statusHeightConstraint;
 
 @end
 
@@ -16,9 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self performSelector:@selector(startMain) withObject:nil afterDelay:3];
 }
 
+-(void)startMain{
+    [self presentViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"] animated:true completion:nil];
+}
+
+-(BOOL)prefersStatusBarHidden{
+    return true;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

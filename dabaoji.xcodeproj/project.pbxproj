@@ -15,6 +15,11 @@
 		BAFEA97F21AD6C60007BACDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFEA97E21AD6C60007BACDE /* main.m */; };
 		BAFEA98921AD6C60007BACDE /* dabaojiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFEA98821AD6C60007BACDE /* dabaojiTests.m */; };
 		BAFEA99421AD6C60007BACDE /* dabaojiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFEA99321AD6C60007BACDE /* dabaojiUITests.m */; };
+		BAFEA9A521AD6E4B007BACDE /* loading.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAFEA9A321AD6E4B007BACDE /* loading.jpg */; };
+		BAFEA9A621AD6E4B007BACDE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BAFEA9A421AD6E4B007BACDE /* icon.png */; };
+		BAFEA9AB21AD801F007BACDE /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFEA9AA21AD801F007BACDE /* DeviceInfo.m */; };
+		BAFEA9B121AD8474007BACDE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFEA9B021AD8474007BACDE /* MainViewController.m */; };
+		BAFEA9B421AD871B007BACDE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFEA9B321AD871B007BACDE /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,13 @@
 		BAFEA98F21AD6C60007BACDE /* dabaojiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dabaojiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFEA99321AD6C60007BACDE /* dabaojiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dabaojiUITests.m; sourceTree = "<group>"; };
 		BAFEA99521AD6C60007BACDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAFEA9A321AD6E4B007BACDE /* loading.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loading.jpg; sourceTree = "<group>"; };
+		BAFEA9A421AD6E4B007BACDE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		BAFEA9A921AD801F007BACDE /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		BAFEA9AA21AD801F007BACDE /* DeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
+		BAFEA9AF21AD8474007BACDE /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BAFEA9B021AD8474007BACDE /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BAFEA9B321AD871B007BACDE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAFEA9B421AD871B007BACDE /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +98,7 @@
 				BAFEA98721AD6C60007BACDE /* dabaojiTests */,
 				BAFEA99221AD6C60007BACDE /* dabaojiUITests */,
 				BAFEA96D21AD6C60007BACDE /* Products */,
+				BAFEA9B221AD871B007BACDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +115,7 @@
 		BAFEA96E21AD6C60007BACDE /* dabaoji */ = {
 			isa = PBXGroup;
 			children = (
+				BAFEA9A221AD6DFD007BACDE /* assets */,
 				BAFEA96F21AD6C60007BACDE /* AppDelegate.h */,
 				BAFEA97021AD6C60007BACDE /* AppDelegate.m */,
 				BAFEA97221AD6C60007BACDE /* ViewController.h */,
@@ -110,6 +125,10 @@
 				BAFEA97A21AD6C60007BACDE /* LaunchScreen.storyboard */,
 				BAFEA97D21AD6C60007BACDE /* Info.plist */,
 				BAFEA97E21AD6C60007BACDE /* main.m */,
+				BAFEA9A921AD801F007BACDE /* DeviceInfo.h */,
+				BAFEA9AA21AD801F007BACDE /* DeviceInfo.m */,
+				BAFEA9AF21AD8474007BACDE /* MainViewController.h */,
+				BAFEA9B021AD8474007BACDE /* MainViewController.m */,
 			);
 			path = dabaoji;
 			sourceTree = "<group>";
@@ -130,6 +149,23 @@
 				BAFEA99521AD6C60007BACDE /* Info.plist */,
 			);
 			path = dabaojiUITests;
+			sourceTree = "<group>";
+		};
+		BAFEA9A221AD6DFD007BACDE /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				BAFEA9A321AD6E4B007BACDE /* loading.jpg */,
+				BAFEA9A421AD6E4B007BACDE /* icon.png */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		BAFEA9B221AD871B007BACDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAFEA9B321AD871B007BACDE /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +276,8 @@
 			files = (
 				BAFEA97C21AD6C60007BACDE /* LaunchScreen.storyboard in Resources */,
 				BAFEA97921AD6C60007BACDE /* Assets.xcassets in Resources */,
+				BAFEA9A521AD6E4B007BACDE /* loading.jpg in Resources */,
+				BAFEA9A621AD6E4B007BACDE /* icon.png in Resources */,
 				BAFEA97721AD6C60007BACDE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +306,8 @@
 				BAFEA97421AD6C60007BACDE /* ViewController.m in Sources */,
 				BAFEA97F21AD6C60007BACDE /* main.m in Sources */,
 				BAFEA97121AD6C60007BACDE /* AppDelegate.m in Sources */,
+				BAFEA9B121AD8474007BACDE /* MainViewController.m in Sources */,
+				BAFEA9AB21AD801F007BACDE /* DeviceInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,8 +469,8 @@
 		BAFEA99921AD6C60007BACDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G6R8SXMXM4;
 				INFOPLIST_FILE = dabaoji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljwl.dabaoji;
@@ -442,8 +482,8 @@
 		BAFEA99A21AD6C60007BACDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G6R8SXMXM4;
 				INFOPLIST_FILE = dabaoji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljwl.dabaoji;
